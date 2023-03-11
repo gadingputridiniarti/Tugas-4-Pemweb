@@ -1,0 +1,60 @@
+<html>
+<head>
+	<TITLE>Tugas 1</TITLE>
+	<script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("#sembunyi1").click(function(){
+			$(".foto1").hide(3000)
+		})
+		$("#tampil1").click(function(){
+			$(".foto1").show(3000)
+		})
+		
+		$("#sembunyi2").click(function(){
+			$(".foto2").hide(3000)
+		})
+		$("#tampil2").click(function(){
+			$(".foto2").show(3000)
+		})
+		});
+	</script>
+	<style type="text/css">
+		#foto1 {
+			width: 200px;
+			height: 300px;
+			background : white;
+			border: 1px solid black;
+			padding: 5px;
+		}
+		#foto2 {
+			width: 200px;
+			height: 300px;
+			background : white;
+			border: 1px solid black;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body><center>
+	<h1>Tombol Sembunyi dan Tampilkan</h1>
+	<button id="sembunyi1">Sembunyikan</button>
+	<button id="tampil1">Tampilkan</button>
+	<br><br>
+	<table cellspacing="20px">
+		<td>
+			<p class="foto1"><img width="200px" src="1.jpg"></p>
+		</td>
+	</table>
+	<br><br>
+	<button id="sembunyi2">Sembunyikan</button>
+	<button id="tampil2">Tampilkan</button>
+	<br><br>
+	<table cellspacing="20px">
+		<td>
+			<p class="foto2"><img width="200px" src="2.jpg"></p>
+		</td>
+	</table>
+</center>
+</body>
+</html>

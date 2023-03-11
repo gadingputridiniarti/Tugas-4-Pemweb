@@ -1,0 +1,50 @@
+<HTML>
+    <HEAD>
+        <TITLE>Tugas 2</TITLE>
+        <SCRIPT type="text/javascript" src="jquery-3.6.4.min.js"></SCRIPT>
+        <SCRIPT type="text/javascript">
+            $(document).ready(function() {
+                $('.kotak1').dblclick(function() {
+                    $(this).css({
+                        "backgroundColor": "gray" 
+                    });
+                });
+                $('.kotak2').dblclick(function() {
+                    $(this).css({
+                        "backgroundColor": "coral" 
+                    });
+                });
+                $('.kotak3').dblclick(function() {
+                    $(this).css({
+                        "backgroundColor": "teal" 
+                    });
+                });
+                $('.kotak4').dblclick(function() {
+                    $(this).css({
+                        "backgroundColor": "cyan" 
+                    });
+                });
+            });
+        </SCRIPT>
+            <STYLE>
+                .kotak1, .kotak2, .kotak3, .kotak4 {
+                    width: 70px;
+                    height: 70px;
+                    background-color: yellow;
+                    padding: 32px 32px;
+                    border: transparent;
+                    border-radius: 4px;
+                    margin: 5px;
+                    cursor: pointer;
+                }
+            </STYLE>
+    </HEAD>
+    <BODY>
+        <h2>Events Double Klik</h2>
+        <p>Klik 2 kali pada setiap kotak untuk mengubah warna</p>
+        <button class="kotak1"></button> &nbsp;
+        <button class="kotak2"></button> &nbsp;
+        <button class="kotak3"></button> &nbsp;
+        <button class="kotak4"></button> &nbsp;
+    </BODY>
+</HTML>
